@@ -10,7 +10,7 @@ $(function () {
         if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
 
             $.getJSON('https://jsonplaceholder.typicode.com/users', function (objekt) {
-                /* console.log(objekt);*/
+                /*wypisanie z kazdego elementu tablicy objekt wartosci */
                 for (var i = 0; i < objekt.length; i++) {
                     $('body').append('<p>Nazwa użytkownika: ' + objekt[i].name + '</p>')
                     $('body').append('<p>Id użytkownika: ' + objekt[i].id + '</p>')
